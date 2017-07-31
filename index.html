@@ -18,14 +18,63 @@
 		<nav>
 			<div class="nav-wrapper">
 				<ul id="nav-mobile" class="left hide-on-med-and-down">
-        			<li><a href="sass.html"><i class="material-icons">dehaze</i></a></li>
+        			<li><a href="#"><i class="material-icons">dehaze</i></a></li>
         			<li><a href="#">Build-A-Unicorn!</a></li>
       			</ul><!--End Ul-->
 			</div><!--End Nav Wrapper-->
 		</nav><!--End Nav-->
 	</div><!--End navbar-fixed-->
 	
-	
+		<h1 class="center-align">It's time to build your unicorn. Let's go!</h1>
+
+		<div class="row">
+			<form>
+				<div class="input-field">
+          			<input id="name" type="text">
+          			<label for="name">Unicorn's name</label>
+        		</div><!--End Input Field Name-->
+        		<div class="input-field">
+    				<select>
+      					<option value="" disabled selected>Unicorn's gender</option>
+      					<option value="F">Female</option>
+      					<option value="M">Male</option>
+      					<option value="N">Doesn't believe in gender</option>
+    				</select>
+    				<label>Unicorn's gender</label>
+  				</div><!--End Input Field Gender-->
+  				<div class="input-field">
+    				<select>
+      					<option value="" disabled selected>Fur color</option>
+      					<option value="blu">Blue</option>
+      					<option value="pin">Pink</option>
+      					<option value="pur">Purple</option>
+      					<option value="ora">Orange</option>
+      					<option value="lim">Lime</option>
+      					<option value="bla">Black</option>
+      					<option value="whi">White</option>
+    				</select>
+    				<label>Fur color</label>
+  				</div><!--End Input Field Gender-->
+  				<div class="range-field">
+  					<label for="horn">Horn Length</label>
+      				<input type="range" min="5" max="25" name="horn"/>
+  				</div><!--End Range field-->
+        		<div class="input-field">
+          			<input id="email" type="email" class="validate">
+          			<label for="email" data-error="Not a valid email address">Email address</label>
+        		</div><!--End Input Field Email-->
+        		<div class="input-field">
+        			<p>
+      					<input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+      					<label for="filled-in-box">I accept terms and conditions</label>
+    				</p>
+        		</div><!--End Input Field Checkbox-->
+        		<div class="input-field">
+        			<button class="btn waves-effect waves-light" type="submit" name="action">Get my unicorn
+  					</button>
+  				</div><!--End Input Field Button-->
+			</form><!--End Form-->
+		</div><!--End Row-->
 
 
 	<!-- jQuery-->
