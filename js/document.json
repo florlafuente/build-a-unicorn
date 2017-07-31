@@ -1,0 +1,32 @@
+{
+  "fur_color": [
+    {
+      "label": "Blue",
+      "value": "blu"
+    },
+    {
+      "label": "Pink",
+      "value": "pin"
+    },
+    {
+      "label": "Purple",
+      "value": "pur"
+    },
+    {
+      "label": "Orange",
+      "value": "ora"
+    },
+    {
+      "label": "Lime",
+      "value": "lim"
+    },
+    {
+      "label": "Black",
+      "value": "bla"
+    },
+    {
+      "label": "White",
+      "value": "whi"
+    }
+  ]
+}
