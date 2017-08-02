@@ -1,0 +1,51 @@
+@import "materialize.scss";
+
+@mixin text-properties {
+	font-size: 1rem;
+	@extend .grey-text;
+}
+
+
+/*Changes Nav Background Color*/
+nav {
+ 	@extend .cyan;
+}
+/* Changes h1 Color and Size */
+h1 {
+	font-size: 2rem;
+	@extend .white-text;
+}
+.blue-container {
+    @extend .cyan, .lighten-4;
+  }
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.formis {
+	@extend .grey, .lighten-5;
+	padding: 20px 75px 20px;
+	width: 450px;
+	border-radius: 2px;
+}
+
+.input-field label {
+	@include text-properties;
+	border-bottom-color: #bdbdbd;
+}
+.select-dropdown {
+	@include text-properties;
+}
+
+.range-field label {
+	@include text-properties;
+	font-size: 0.75rem;
+}
+
+.boton {
+	@extend .cyan, .darken-1;
+	font-size: 0.875rem;
+	padding: 5px 15px;
+	line-height: normal;
+}
