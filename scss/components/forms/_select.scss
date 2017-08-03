@@ -32,6 +32,7 @@ select {
 }
 
 .select-wrapper {
+  color: $input-border-color;
   &.valid {
     & > input.select-dropdown {
       @extend %valid-input-style;

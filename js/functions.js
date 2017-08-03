@@ -1,6 +1,19 @@
 $(document).ready(function() {
+	
 
-	//Initialize select elements
+
     $('select').material_select();
+    console.log('Hola');
+    
+   var email = $('#email').val();
 
-  }); //End Document Ready
+   if (email.length == 0 ){
+
+   	$('#error').css('visibility', 'visible');
+   }
+   console.log('chau');
+    
+
+ });
+
+
