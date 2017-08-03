@@ -1,16 +1,16 @@
 $(document).ready(function() {
-	
-
-
+	 //Initialize Select Dropdown
     $('select').material_select();
-    console.log('Hola');
-    
-   var email = $('#email').val();
 
-   if (email.length == 0 ){
+    //Activates Burger Menu in Mobile Layout
+    //$(".button-collapse").sideNav();
 
-   	$('#error').css('visibility', 'visible');
-   }
+  $('.button-collapse').sideNav();
+
+    $('.checkbox').on('click', function() {
+    	console.log('Hola');
+    });
+
    console.log('chau');
     
 

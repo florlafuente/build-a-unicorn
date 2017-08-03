@@ -1,12 +1,18 @@
+/* Importing Classes from materialize, otherwise the classes don't work*/
+
 @import "components/_color.scss";
+@import "components/_variables.scss";
+
+/*Media Queries Variables*/
+$mediaMaxWidth: 1260px;
+$mediaBp1Width: 960px;
+$mediaMinWidth: 480px;
 
 
-@mixin my-button {
-	@extend .cyan, .darken-1;
-	font-size: 0.875rem;
-	padding: 5px 15px;
-	line-height: normal;
-	margin: 10px;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -20,44 +26,74 @@ background: -webkit-linear-gradient(45deg, #d084a9 7%,#e2e4d4 50%,#e2e4d4 54%,#0
 /* Internet Explorer Gradient */
 background: linear-gradient(45deg, #d084a9 7%,#e2e4d4 50%,#e2e4d4 54%,#00b6ce 100%) fixed; 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d084a9', endColorstr='#00b6ce',GradientType=1 ); 
+	
+}
+
+/* Changes h1 Size */
+h1 {
+font-size: 2rem;
+color: #FFF;
+}
+
+/*Overwrites Form Padding*/
+.myform {			
+padding: 15px 50px;
+}
+
+/*Changes Select Arrow Size and Color*/
+.select-wrapper {
+	span.caret {
+	@extend .grey-text, .lighten-3;
+	font-size: 0.8rem;
+	}
+}
 
 
-
-	.container {
-
-		/* Changes h1 Size */
-		h1 {
-		font-size: 2rem;	
-		}
-
-		.myform {
-			padding: 10px 90px;
-
-			/*Changes Select Arrow Size and Color*/
-			.select-wrapper {
-				span.caret {
-				@extend .grey-text, .lighten-3;
-				font-size: 0.8rem;
-				}
-			}
-
-
-			/* Overwrites Gender Select Bg Color */
-			#gender-field .dropdown-content{
-
-					li {
-					@extend .grey, .lighten-3;
-					}
-			}
+/* Overwrites Gender Select Bg Color */
+#gender-field .dropdown-content{
+	li {
+	@extend .grey, .lighten-3;
+	}
+}
 		
 
-			/* Changes Horn Field Width*/
-			.range-field {
-				width: 70%;
+/* Changes Horn Field Width*/
+.range-field {
+width: 70%;
+
+	/* Overwrites Range Border*/
+	input[type=range] {
+	border: 0px;
+	}
+
+
+	/* Shows Range Track in Mozilla */
+	input[type=range]::-moz-range-progress {
+	background-color: $secondary-color;
+	}
+
+	/* Shows Range Track in IE */
+	input[type=range]::-ms-fill-lower {
+	background-color: $secondary-color;
+	}
+
+
 
 				/*Changes Label Size */
 				label {
 				font-size: 0.75rem;
+				}
+
+				/* Div Showing Max and Min Horn Length Value */
+				.horn-range {
+					display: flex;
+					justify-content: space-between;
+					p {
+						@extend .grey-text, .lighten-3;
+						display: inline-block;
+						font-size: 0.5rem;
+						margin-top: -10px;
+					}
 				}
 			}
 
@@ -68,33 +104,41 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d084a9', end
 
 			}
 
-			/*Changes Alert Icon Style and Position */
+			/*Changes Alert Icon Style*/
 			#error {
-			margin-top: -5px;
 			visibility: hidden;
-		
 				.material-icons {
 				font-size: 1.2rem;
+				
 				}	
 			}
 
 			/* Changes Checkbox Label Position */
 			.input-checkbox label {
-			padding-left: 50px;
+			padding-left:20%;
 			}
-
-
 
 			/* Overwrites Button Style */
 			.boton {
-			@include my-button;
+			@extend .cyan, .darken-1;
+			font-size: 0.875rem;
+			padding: 5px 15px;
+			line-height: normal;
+	 		margin: 10px;
 			}
-		}
 
+/************* Media Queries**************/
+@media all and (max-width: 600px) { 
+body{
+	background: #fafafa;
+}
 
-
-	
-
-
+h1 {
+	font-size: 1.8rem;
+	color: #e91e63;
 	}
+
+form {
+	background: #FFF;
+}
 }

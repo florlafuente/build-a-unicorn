@@ -20,8 +20,12 @@
 	<div class="navbar-fixed">
 		<nav class="cyan z-depth-0">
 			<div class="nav-wrapper">
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="#.html">Build a unicorn!</a></li>
+                </ul>
 				<ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li><a href="#"><i class="material-icons">dehaze</i></a></li>
+                    <li><a href="#"><i class="material-icons">menu</i></a></li>
                     <li><a href="#">Build-A-Unicorn!</a></li>
                 </ul><!--End Ul-->
 			</div><!--End Nav Wrapper-->
@@ -33,12 +37,12 @@
 
         <!--Header-->
 		<header>
-		  <h1 class="white-text center-align">It´s time to build your unicorn. Let´s go!</h1>
+		  <h1 class="center-align">It's time to build your unicorn. Let's go!</h1>
 		</header><!--End Header-->
 
         <!--Form-->
 		<div class="row">
-			<form class="col s6 offset-s3 card grey lighten-5 z-depth-5 myform">
+			<form class="col m6 s12 offset-m3 card grey lighten-5 z-depth-5 myform">
 
                 <!--Name-->
 		        <div class="input-field">
@@ -73,23 +77,27 @@
                 <!--Horn Length-->
   			   <div class="range-field">
                     <label for="horn">Horn Length</label>
-      		        <input type="range" min="5" max="25" name="horn"/>
+                    <input type="range" min="5" max="25" name="horn" id="horn"/>
+                    <div class="horn-range">
+                        <p>5 cm</p>
+                        <p>25 cm</p>
+                    </div>
   			   </div><!--End Range field-->
 
                 <!--Email-->
                 <div class="input-field">
                     <input id="email" type="email" class="validate">
-                    <label for="email" id="labelmail" data-error="Not a valid e-mail">Email address</label>
+                    <label for="email" id="labelmail" data-error="Not a valid e-mail address">Email address</label>
                     <!--Alert Icon-->
                     <div class="red-text" id="error">
-                        <p><i class="material-icons">warning</i></p>
+                        <p class="right-align"><i class="material-icons">warning</i></p>
                     </div><!--End Alert-->
                 </div><!--End Input Field Email-->
 
                 <!--Checkbox-->
                 <div class="input-checkbox">
-      			   <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-      			   <label for="filled-in-box">I accept terms and conditions</label>
+      			   <input type="checkbox" class="filled-in" id="terms"/>
+                    <label for="terms">I accept terms and conditions</label>
                 </div><!--End Input Field Checkbox-->
 
                 <!--Button-->
@@ -100,7 +108,7 @@
                 </div><!--End Input Field Button-->
         
 	       </form><!--End Form-->
-           
+
 		</div><!--End Row-->
 
 	</main><!--End Main Container-->

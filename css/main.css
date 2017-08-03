@@ -1,3 +1,4 @@
+/* Importing Classes from materialize, otherwise the classes don't work*/
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -16,7 +17,7 @@
 .materialize-red-text.text-lighten-4 {
   color: #f8c1c3 !important; }
 
-.materialize-red.lighten-3, body .container .myform .select-wrapper span.materialize-red.caret, body .container .myform #gender-field .dropdown-content li.materialize-red {
+.materialize-red.lighten-3, .select-wrapper span.materialize-red.caret, #gender-field .dropdown-content li.materialize-red, .range-field .horn-range p.materialize-red {
   background-color: #f3989b !important; }
 
 .materialize-red-text.text-lighten-3 {
@@ -34,7 +35,7 @@
 .materialize-red-text.text-lighten-1 {
   color: #ea454b !important; }
 
-.materialize-red.darken-1, body .container .myform .materialize-red.boton {
+.materialize-red.darken-1, .materialize-red.boton {
   background-color: #d0181e !important; }
 
 .materialize-red-text.text-darken-1 {
@@ -76,7 +77,7 @@
 .red-text.text-lighten-4 {
   color: #FFCDD2 !important; }
 
-.red.lighten-3, body .container .myform .select-wrapper span.red.caret, body .container .myform #gender-field .dropdown-content li.red {
+.red.lighten-3, .select-wrapper span.red.caret, #gender-field .dropdown-content li.red, .range-field .horn-range p.red {
   background-color: #EF9A9A !important; }
 
 .red-text.text-lighten-3 {
@@ -94,7 +95,7 @@
 .red-text.text-lighten-1 {
   color: #EF5350 !important; }
 
-.red.darken-1, body .container .myform .red.boton {
+.red.darken-1, .red.boton {
   background-color: #E53935 !important; }
 
 .red-text.text-darken-1 {
@@ -160,7 +161,7 @@
 .pink-text.text-lighten-4 {
   color: #f8bbd0 !important; }
 
-.pink.lighten-3, body .container .myform .select-wrapper span.pink.caret, body .container .myform #gender-field .dropdown-content li.pink {
+.pink.lighten-3, .select-wrapper span.pink.caret, #gender-field .dropdown-content li.pink, .range-field .horn-range p.pink {
   background-color: #f48fb1 !important; }
 
 .pink-text.text-lighten-3 {
@@ -178,7 +179,7 @@
 .pink-text.text-lighten-1 {
   color: #ec407a !important; }
 
-.pink.darken-1, body .container .myform .pink.boton {
+.pink.darken-1, .pink.boton {
   background-color: #d81b60 !important; }
 
 .pink-text.text-darken-1 {
@@ -244,7 +245,7 @@
 .purple-text.text-lighten-4 {
   color: #e1bee7 !important; }
 
-.purple.lighten-3, body .container .myform .select-wrapper span.purple.caret, body .container .myform #gender-field .dropdown-content li.purple {
+.purple.lighten-3, .select-wrapper span.purple.caret, #gender-field .dropdown-content li.purple, .range-field .horn-range p.purple {
   background-color: #ce93d8 !important; }
 
 .purple-text.text-lighten-3 {
@@ -262,7 +263,7 @@
 .purple-text.text-lighten-1 {
   color: #ab47bc !important; }
 
-.purple.darken-1, body .container .myform .purple.boton {
+.purple.darken-1, .purple.boton {
   background-color: #8e24aa !important; }
 
 .purple-text.text-darken-1 {
@@ -328,7 +329,7 @@
 .deep-purple-text.text-lighten-4 {
   color: #d1c4e9 !important; }
 
-.deep-purple.lighten-3, body .container .myform .select-wrapper span.deep-purple.caret, body .container .myform #gender-field .dropdown-content li.deep-purple {
+.deep-purple.lighten-3, .select-wrapper span.deep-purple.caret, #gender-field .dropdown-content li.deep-purple, .range-field .horn-range p.deep-purple {
   background-color: #b39ddb !important; }
 
 .deep-purple-text.text-lighten-3 {
@@ -346,7 +347,7 @@
 .deep-purple-text.text-lighten-1 {
   color: #7e57c2 !important; }
 
-.deep-purple.darken-1, body .container .myform .deep-purple.boton {
+.deep-purple.darken-1, .deep-purple.boton {
   background-color: #5e35b1 !important; }
 
 .deep-purple-text.text-darken-1 {
@@ -412,7 +413,7 @@
 .indigo-text.text-lighten-4 {
   color: #c5cae9 !important; }
 
-.indigo.lighten-3, body .container .myform .select-wrapper span.indigo.caret, body .container .myform #gender-field .dropdown-content li.indigo {
+.indigo.lighten-3, .select-wrapper span.indigo.caret, #gender-field .dropdown-content li.indigo, .range-field .horn-range p.indigo {
   background-color: #9fa8da !important; }
 
 .indigo-text.text-lighten-3 {
@@ -430,7 +431,7 @@
 .indigo-text.text-lighten-1 {
   color: #5c6bc0 !important; }
 
-.indigo.darken-1, body .container .myform .indigo.boton {
+.indigo.darken-1, .indigo.boton {
   background-color: #3949ab !important; }
 
 .indigo-text.text-darken-1 {
@@ -496,7 +497,7 @@
 .blue-text.text-lighten-4 {
   color: #BBDEFB !important; }
 
-.blue.lighten-3, body .container .myform .select-wrapper span.blue.caret, body .container .myform #gender-field .dropdown-content li.blue {
+.blue.lighten-3, .select-wrapper span.blue.caret, #gender-field .dropdown-content li.blue, .range-field .horn-range p.blue {
   background-color: #90CAF9 !important; }
 
 .blue-text.text-lighten-3 {
@@ -514,7 +515,7 @@
 .blue-text.text-lighten-1 {
   color: #42A5F5 !important; }
 
-.blue.darken-1, body .container .myform .blue.boton {
+.blue.darken-1, .blue.boton {
   background-color: #1E88E5 !important; }
 
 .blue-text.text-darken-1 {
@@ -580,7 +581,7 @@
 .light-blue-text.text-lighten-4 {
   color: #b3e5fc !important; }
 
-.light-blue.lighten-3, body .container .myform .select-wrapper span.light-blue.caret, body .container .myform #gender-field .dropdown-content li.light-blue {
+.light-blue.lighten-3, .select-wrapper span.light-blue.caret, #gender-field .dropdown-content li.light-blue, .range-field .horn-range p.light-blue {
   background-color: #81d4fa !important; }
 
 .light-blue-text.text-lighten-3 {
@@ -598,7 +599,7 @@
 .light-blue-text.text-lighten-1 {
   color: #29b6f6 !important; }
 
-.light-blue.darken-1, body .container .myform .light-blue.boton {
+.light-blue.darken-1, .light-blue.boton {
   background-color: #039be5 !important; }
 
 .light-blue-text.text-darken-1 {
@@ -646,85 +647,85 @@
 .light-blue-text.text-accent-4 {
   color: #0091ea !important; }
 
-.cyan, body .container .myform .boton {
+.cyan, .boton {
   background-color: #00bcd4 !important; }
 
 .cyan-text {
   color: #00bcd4 !important; }
 
-.cyan.lighten-5, body .container .myform .lighten-5.boton {
+.cyan.lighten-5, .lighten-5.boton {
   background-color: #e0f7fa !important; }
 
 .cyan-text.text-lighten-5 {
   color: #e0f7fa !important; }
 
-.cyan.lighten-4, body .container .myform .lighten-4.boton {
+.cyan.lighten-4, .lighten-4.boton {
   background-color: #b2ebf2 !important; }
 
 .cyan-text.text-lighten-4 {
   color: #b2ebf2 !important; }
 
-.cyan.lighten-3, body .container .myform .select-wrapper span.cyan.caret, body .container .myform .select-wrapper span.caret.boton, body .container .myform #gender-field .dropdown-content li.cyan, body .container .myform #gender-field .dropdown-content li.boton, body .container .myform .lighten-3.boton {
+.cyan.lighten-3, .select-wrapper span.cyan.caret, .select-wrapper span.caret.boton, #gender-field .dropdown-content li.cyan, #gender-field .dropdown-content li.boton, .range-field .horn-range p.cyan, .range-field .horn-range p.boton, .lighten-3.boton {
   background-color: #80deea !important; }
 
 .cyan-text.text-lighten-3 {
   color: #80deea !important; }
 
-.cyan.lighten-2, body .container .myform .lighten-2.boton {
+.cyan.lighten-2, .lighten-2.boton {
   background-color: #4dd0e1 !important; }
 
 .cyan-text.text-lighten-2 {
   color: #4dd0e1 !important; }
 
-.cyan.lighten-1, body .container .myform .lighten-1.boton {
+.cyan.lighten-1, .lighten-1.boton {
   background-color: #26c6da !important; }
 
 .cyan-text.text-lighten-1 {
   color: #26c6da !important; }
 
-.cyan.darken-1, body .container .myform .boton {
+.cyan.darken-1, .boton {
   background-color: #00acc1 !important; }
 
 .cyan-text.text-darken-1 {
   color: #00acc1 !important; }
 
-.cyan.darken-2, body .container .myform .darken-2.boton {
+.cyan.darken-2, .darken-2.boton {
   background-color: #0097a7 !important; }
 
 .cyan-text.text-darken-2 {
   color: #0097a7 !important; }
 
-.cyan.darken-3, body .container .myform .darken-3.boton {
+.cyan.darken-3, .darken-3.boton {
   background-color: #00838f !important; }
 
 .cyan-text.text-darken-3 {
   color: #00838f !important; }
 
-.cyan.darken-4, body .container .myform .darken-4.boton {
+.cyan.darken-4, .darken-4.boton {
   background-color: #006064 !important; }
 
 .cyan-text.text-darken-4 {
   color: #006064 !important; }
 
-.cyan.accent-1, body .container .myform .accent-1.boton {
+.cyan.accent-1, .accent-1.boton {
   background-color: #84ffff !important; }
 
 .cyan-text.text-accent-1 {
   color: #84ffff !important; }
 
-.cyan.accent-2, body .container .myform .accent-2.boton {
+.cyan.accent-2, .accent-2.boton {
   background-color: #18ffff !important; }
 
 .cyan-text.text-accent-2 {
   color: #18ffff !important; }
 
-.cyan.accent-3, body .container .myform .accent-3.boton {
+.cyan.accent-3, .accent-3.boton {
   background-color: #00e5ff !important; }
 
 .cyan-text.text-accent-3 {
   color: #00e5ff !important; }
 
-.cyan.accent-4, body .container .myform .accent-4.boton {
+.cyan.accent-4, .accent-4.boton {
   background-color: #00b8d4 !important; }
 
 .cyan-text.text-accent-4 {
@@ -748,7 +749,7 @@
 .teal-text.text-lighten-4 {
   color: #b2dfdb !important; }
 
-.teal.lighten-3, body .container .myform .select-wrapper span.teal.caret, body .container .myform #gender-field .dropdown-content li.teal {
+.teal.lighten-3, .select-wrapper span.teal.caret, #gender-field .dropdown-content li.teal, .range-field .horn-range p.teal {
   background-color: #80cbc4 !important; }
 
 .teal-text.text-lighten-3 {
@@ -766,7 +767,7 @@
 .teal-text.text-lighten-1 {
   color: #26a69a !important; }
 
-.teal.darken-1, body .container .myform .teal.boton {
+.teal.darken-1, .teal.boton {
   background-color: #00897b !important; }
 
 .teal-text.text-darken-1 {
@@ -832,7 +833,7 @@
 .green-text.text-lighten-4 {
   color: #C8E6C9 !important; }
 
-.green.lighten-3, body .container .myform .select-wrapper span.green.caret, body .container .myform #gender-field .dropdown-content li.green {
+.green.lighten-3, .select-wrapper span.green.caret, #gender-field .dropdown-content li.green, .range-field .horn-range p.green {
   background-color: #A5D6A7 !important; }
 
 .green-text.text-lighten-3 {
@@ -850,7 +851,7 @@
 .green-text.text-lighten-1 {
   color: #66BB6A !important; }
 
-.green.darken-1, body .container .myform .green.boton {
+.green.darken-1, .green.boton {
   background-color: #43A047 !important; }
 
 .green-text.text-darken-1 {
@@ -916,7 +917,7 @@
 .light-green-text.text-lighten-4 {
   color: #dcedc8 !important; }
 
-.light-green.lighten-3, body .container .myform .select-wrapper span.light-green.caret, body .container .myform #gender-field .dropdown-content li.light-green {
+.light-green.lighten-3, .select-wrapper span.light-green.caret, #gender-field .dropdown-content li.light-green, .range-field .horn-range p.light-green {
   background-color: #c5e1a5 !important; }
 
 .light-green-text.text-lighten-3 {
@@ -934,7 +935,7 @@
 .light-green-text.text-lighten-1 {
   color: #9ccc65 !important; }
 
-.light-green.darken-1, body .container .myform .light-green.boton {
+.light-green.darken-1, .light-green.boton {
   background-color: #7cb342 !important; }
 
 .light-green-text.text-darken-1 {
@@ -1000,7 +1001,7 @@
 .lime-text.text-lighten-4 {
   color: #f0f4c3 !important; }
 
-.lime.lighten-3, body .container .myform .select-wrapper span.lime.caret, body .container .myform #gender-field .dropdown-content li.lime {
+.lime.lighten-3, .select-wrapper span.lime.caret, #gender-field .dropdown-content li.lime, .range-field .horn-range p.lime {
   background-color: #e6ee9c !important; }
 
 .lime-text.text-lighten-3 {
@@ -1018,7 +1019,7 @@
 .lime-text.text-lighten-1 {
   color: #d4e157 !important; }
 
-.lime.darken-1, body .container .myform .lime.boton {
+.lime.darken-1, .lime.boton {
   background-color: #c0ca33 !important; }
 
 .lime-text.text-darken-1 {
@@ -1084,7 +1085,7 @@
 .yellow-text.text-lighten-4 {
   color: #fff9c4 !important; }
 
-.yellow.lighten-3, body .container .myform .select-wrapper span.yellow.caret, body .container .myform #gender-field .dropdown-content li.yellow {
+.yellow.lighten-3, .select-wrapper span.yellow.caret, #gender-field .dropdown-content li.yellow, .range-field .horn-range p.yellow {
   background-color: #fff59d !important; }
 
 .yellow-text.text-lighten-3 {
@@ -1102,7 +1103,7 @@
 .yellow-text.text-lighten-1 {
   color: #ffee58 !important; }
 
-.yellow.darken-1, body .container .myform .yellow.boton {
+.yellow.darken-1, .yellow.boton {
   background-color: #fdd835 !important; }
 
 .yellow-text.text-darken-1 {
@@ -1168,7 +1169,7 @@
 .amber-text.text-lighten-4 {
   color: #ffecb3 !important; }
 
-.amber.lighten-3, body .container .myform .select-wrapper span.amber.caret, body .container .myform #gender-field .dropdown-content li.amber {
+.amber.lighten-3, .select-wrapper span.amber.caret, #gender-field .dropdown-content li.amber, .range-field .horn-range p.amber {
   background-color: #ffe082 !important; }
 
 .amber-text.text-lighten-3 {
@@ -1186,7 +1187,7 @@
 .amber-text.text-lighten-1 {
   color: #ffca28 !important; }
 
-.amber.darken-1, body .container .myform .amber.boton {
+.amber.darken-1, .amber.boton {
   background-color: #ffb300 !important; }
 
 .amber-text.text-darken-1 {
@@ -1252,7 +1253,7 @@
 .orange-text.text-lighten-4 {
   color: #ffe0b2 !important; }
 
-.orange.lighten-3, body .container .myform .select-wrapper span.orange.caret, body .container .myform #gender-field .dropdown-content li.orange {
+.orange.lighten-3, .select-wrapper span.orange.caret, #gender-field .dropdown-content li.orange, .range-field .horn-range p.orange {
   background-color: #ffcc80 !important; }
 
 .orange-text.text-lighten-3 {
@@ -1270,7 +1271,7 @@
 .orange-text.text-lighten-1 {
   color: #ffa726 !important; }
 
-.orange.darken-1, body .container .myform .orange.boton {
+.orange.darken-1, .orange.boton {
   background-color: #fb8c00 !important; }
 
 .orange-text.text-darken-1 {
@@ -1336,7 +1337,7 @@
 .deep-orange-text.text-lighten-4 {
   color: #ffccbc !important; }
 
-.deep-orange.lighten-3, body .container .myform .select-wrapper span.deep-orange.caret, body .container .myform #gender-field .dropdown-content li.deep-orange {
+.deep-orange.lighten-3, .select-wrapper span.deep-orange.caret, #gender-field .dropdown-content li.deep-orange, .range-field .horn-range p.deep-orange {
   background-color: #ffab91 !important; }
 
 .deep-orange-text.text-lighten-3 {
@@ -1354,7 +1355,7 @@
 .deep-orange-text.text-lighten-1 {
   color: #ff7043 !important; }
 
-.deep-orange.darken-1, body .container .myform .deep-orange.boton {
+.deep-orange.darken-1, .deep-orange.boton {
   background-color: #f4511e !important; }
 
 .deep-orange-text.text-darken-1 {
@@ -1420,7 +1421,7 @@
 .brown-text.text-lighten-4 {
   color: #d7ccc8 !important; }
 
-.brown.lighten-3, body .container .myform .select-wrapper span.brown.caret, body .container .myform #gender-field .dropdown-content li.brown {
+.brown.lighten-3, .select-wrapper span.brown.caret, #gender-field .dropdown-content li.brown, .range-field .horn-range p.brown {
   background-color: #bcaaa4 !important; }
 
 .brown-text.text-lighten-3 {
@@ -1438,7 +1439,7 @@
 .brown-text.text-lighten-1 {
   color: #8d6e63 !important; }
 
-.brown.darken-1, body .container .myform .brown.boton {
+.brown.darken-1, .brown.boton {
   background-color: #6d4c41 !important; }
 
 .brown-text.text-darken-1 {
@@ -1480,7 +1481,7 @@
 .blue-grey-text.text-lighten-4 {
   color: #cfd8dc !important; }
 
-.blue-grey.lighten-3, body .container .myform .select-wrapper span.blue-grey.caret, body .container .myform #gender-field .dropdown-content li.blue-grey {
+.blue-grey.lighten-3, .select-wrapper span.blue-grey.caret, #gender-field .dropdown-content li.blue-grey, .range-field .horn-range p.blue-grey {
   background-color: #b0bec5 !important; }
 
 .blue-grey-text.text-lighten-3 {
@@ -1498,7 +1499,7 @@
 .blue-grey-text.text-lighten-1 {
   color: #78909c !important; }
 
-.blue-grey.darken-1, body .container .myform .blue-grey.boton {
+.blue-grey.darken-1, .blue-grey.boton {
   background-color: #546e7a !important; }
 
 .blue-grey-text.text-darken-1 {
@@ -1522,64 +1523,64 @@
 .blue-grey-text.text-darken-4 {
   color: #263238 !important; }
 
-.grey, body .container .myform #gender-field .dropdown-content li {
+.grey, #gender-field .dropdown-content li {
   background-color: #9e9e9e !important; }
 
-.grey-text, body .container .myform .select-wrapper span.caret {
+.grey-text, .select-wrapper span.caret, .range-field .horn-range p {
   color: #9e9e9e !important; }
 
-.grey.lighten-5, body .container .myform #gender-field .dropdown-content li.lighten-5 {
+.grey.lighten-5, #gender-field .dropdown-content li.lighten-5 {
   background-color: #fafafa !important; }
 
-.grey-text.text-lighten-5, body .container .myform .select-wrapper span.text-lighten-5.caret {
+.grey-text.text-lighten-5, .select-wrapper span.text-lighten-5.caret, .range-field .horn-range p.text-lighten-5 {
   color: #fafafa !important; }
 
-.grey.lighten-4, body .container .myform #gender-field .dropdown-content li.lighten-4 {
+.grey.lighten-4, #gender-field .dropdown-content li.lighten-4 {
   background-color: #f5f5f5 !important; }
 
-.grey-text.text-lighten-4, body .container .myform .select-wrapper span.text-lighten-4.caret {
+.grey-text.text-lighten-4, .select-wrapper span.text-lighten-4.caret, .range-field .horn-range p.text-lighten-4 {
   color: #f5f5f5 !important; }
 
-.grey.lighten-3, body .container .myform .select-wrapper span.grey.caret, body .container .myform #gender-field .dropdown-content li {
+.grey.lighten-3, .select-wrapper span.grey.caret, #gender-field .dropdown-content li, .range-field .horn-range p.grey {
   background-color: #eeeeee !important; }
 
-.grey-text.text-lighten-3, body .container .myform .select-wrapper span.text-lighten-3.caret {
+.grey-text.text-lighten-3, .select-wrapper span.text-lighten-3.caret, .range-field .horn-range p.text-lighten-3 {
   color: #eeeeee !important; }
 
-.grey.lighten-2, body .container .myform #gender-field .dropdown-content li.lighten-2 {
+.grey.lighten-2, #gender-field .dropdown-content li.lighten-2 {
   background-color: #e0e0e0 !important; }
 
-.grey-text.text-lighten-2, body .container .myform .select-wrapper span.text-lighten-2.caret {
+.grey-text.text-lighten-2, .select-wrapper span.text-lighten-2.caret, .range-field .horn-range p.text-lighten-2 {
   color: #e0e0e0 !important; }
 
-.grey.lighten-1, body .container .myform #gender-field .dropdown-content li.lighten-1 {
+.grey.lighten-1, #gender-field .dropdown-content li.lighten-1 {
   background-color: #bdbdbd !important; }
 
-.grey-text.text-lighten-1, body .container .myform .select-wrapper span.text-lighten-1.caret {
+.grey-text.text-lighten-1, .select-wrapper span.text-lighten-1.caret, .range-field .horn-range p.text-lighten-1 {
   color: #bdbdbd !important; }
 
-.grey.darken-1, body .container .myform #gender-field .dropdown-content li.darken-1, body .container .myform #gender-field .dropdown-content li.boton, body .container .myform .grey.boton {
+.grey.darken-1, #gender-field .dropdown-content li.darken-1, #gender-field .dropdown-content li.boton, .grey.boton {
   background-color: #757575 !important; }
 
-.grey-text.text-darken-1, body .container .myform .select-wrapper span.text-darken-1.caret {
+.grey-text.text-darken-1, .select-wrapper span.text-darken-1.caret, .range-field .horn-range p.text-darken-1 {
   color: #757575 !important; }
 
-.grey.darken-2, body .container .myform #gender-field .dropdown-content li.darken-2 {
+.grey.darken-2, #gender-field .dropdown-content li.darken-2 {
   background-color: #616161 !important; }
 
-.grey-text.text-darken-2, body .container .myform .select-wrapper span.text-darken-2.caret {
+.grey-text.text-darken-2, .select-wrapper span.text-darken-2.caret, .range-field .horn-range p.text-darken-2 {
   color: #616161 !important; }
 
-.grey.darken-3, body .container .myform #gender-field .dropdown-content li.darken-3 {
+.grey.darken-3, #gender-field .dropdown-content li.darken-3 {
   background-color: #424242 !important; }
 
-.grey-text.text-darken-3, body .container .myform .select-wrapper span.text-darken-3.caret {
+.grey-text.text-darken-3, .select-wrapper span.text-darken-3.caret, .range-field .horn-range p.text-darken-3 {
   color: #424242 !important; }
 
-.grey.darken-4, body .container .myform #gender-field .dropdown-content li.darken-4 {
+.grey.darken-4, #gender-field .dropdown-content li.darken-4 {
   background-color: #212121 !important; }
 
-.grey-text.text-darken-4, body .container .myform .select-wrapper span.text-darken-4.caret {
+.grey-text.text-darken-4, .select-wrapper span.text-darken-4.caret, .range-field .horn-range p.text-darken-4 {
   color: #212121 !important; }
 
 .black {
@@ -1600,6 +1601,12 @@
 .transparent-text {
   color: transparent !important; }
 
+/*Media Queries Variables*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 body {
   /* Used colorzilla to make gradient */
   /* Plain bg for old browsers*/
@@ -1611,39 +1618,76 @@ body {
   /* Internet Explorer Gradient */
   background: linear-gradient(45deg, #d084a9 7%, #e2e4d4 50%, #e2e4d4 54%, #00b6ce 100%) fixed;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d084a9', endColorstr='#00b6ce',GradientType=1 ); }
-  body .container {
-    /* Changes h1 Size */ }
-    body .container h1 {
-      font-size: 2rem; }
-    body .container .myform {
-      padding: 10px 90px;
-      /*Changes Select Arrow Size and Color*/
-      /* Overwrites Gender Select Bg Color */
-      /* Changes Horn Field Width*/
-      /* Overwrites Email margin */
-      /*Changes Alert Icon Style and Position */
-      /* Changes Checkbox Label Position */
-      /* Overwrites Button Style */ }
-      body .container .myform .select-wrapper span.caret {
-        font-size: 0.8rem; }
-      body .container .myform .range-field {
-        width: 70%;
-        /*Changes Label Size */ }
-        body .container .myform .range-field label {
-          font-size: 0.75rem; }
-      body .container .myform #email {
-        margin-bottom: 0; }
-      body .container .myform #error {
-        margin-top: -5px;
-        visibility: hidden; }
-        body .container .myform #error .material-icons {
-          font-size: 1.2rem; }
-      body .container .myform .input-checkbox label {
-        padding-left: 50px; }
-      body .container .myform .boton {
-        font-size: 0.875rem;
-        padding: 5px 15px;
-        line-height: normal;
-        margin: 10px; }
+
+/* Changes h1 Size */
+h1 {
+  font-size: 2rem;
+  color: #FFF; }
+
+/*Overwrites Form Padding*/
+.myform {
+  padding: 15px 50px; }
+
+/*Changes Select Arrow Size and Color*/
+.select-wrapper span.caret {
+  font-size: 0.8rem; }
+
+/* Overwrites Gender Select Bg Color */
+/* Changes Horn Field Width*/
+.range-field {
+  width: 70%;
+  /* Overwrites Range Border*/
+  /* Shows Range Track in Mozilla */
+  /* Shows Range Track in IE */
+  /*Changes Label Size */
+  /* Div Showing Max and Min Horn Length Value */ }
+  .range-field input[type=range] {
+    border: 0px; }
+  .range-field input[type=range]::-moz-range-progress {
+    background-color: #81d4fa; }
+  .range-field input[type=range]::-ms-fill-lower {
+    background-color: #81d4fa; }
+  .range-field label {
+    font-size: 0.75rem; }
+  .range-field .horn-range {
+    display: flex;
+    justify-content: space-between; }
+    .range-field .horn-range p {
+      display: inline-block;
+      font-size: 0.5rem;
+      margin-top: -10px; }
+
+/* Overwrites Email margin */
+#email {
+  margin-bottom: 0; }
+
+/*Changes Alert Icon Style*/
+#error {
+  visibility: hidden; }
+  #error .material-icons {
+    font-size: 1.2rem; }
+
+/* Changes Checkbox Label Position */
+.input-checkbox label {
+  padding-left: 20%; }
+
+/* Overwrites Button Style */
+.boton {
+  font-size: 0.875rem;
+  padding: 5px 15px;
+  line-height: normal;
+  margin: 10px; }
+
+/************* Media Queries**************/
+@media all and (max-width: 600px) {
+  body {
+    background: #fafafa; }
+
+  h1 {
+    font-size: 1.8rem;
+    color: #e91e63; }
+
+  form {
+    background: #FFF; } }
 
 /*# sourceMappingURL=main.css.map */
