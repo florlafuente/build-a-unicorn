@@ -36,10 +36,12 @@ color: #FFF;
 }
 
 /*Overwrites Form Padding*/
-.myform {			
-padding: 15px 50px;
+#myform {			
+padding: 10px 50px;
 }
-
+.message {
+	display: none;
+}
 /*Changes Select Arrow Size and Color*/
 .select-wrapper {
 	span.caret {
@@ -55,7 +57,10 @@ padding: 15px 50px;
 	@extend .grey, .lighten-3;
 	}
 }
-		
+
+.gender-invalid {
+	display: none;
+}	
 
 /* Changes Horn Field Width*/
 .range-field {
@@ -106,7 +111,7 @@ width: 70%;
 
 			/*Changes Alert Icon Style*/
 			#error {
-			visibility: hidden;
+			display: none;
 				.material-icons {
 				font-size: 1.2rem;
 				

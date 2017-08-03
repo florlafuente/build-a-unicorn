@@ -42,29 +42,42 @@
 
         <!--Form-->
 		<div class="row">
-			<form class="col m6 s12 offset-m3 card grey lighten-5 z-depth-5 myform">
-
+			<form class="col m6 s12 offset-m3 card grey lighten-5 z-depth-5" id="myform" method="post">
+                <div class="message purple-text lighten-3" id="success"> 
+                    <p class="center-align">
+                        <i class="material-icons">favorite</i> 
+                        Yay! Your Unicorn is on it's way!
+                        <i class="material-icons">favorite</i><br>
+                        We'll be contacting you soon for further details
+                    </p>
+                </div>
+                <div class="message red-text" id="fail"> 
+                    <p class="center-align">
+                    So sad! We can't make your unicorn. Please check your information
+                    </p>
+                 </div>
                 <!--Name-->
 		        <div class="input-field">
-                    <input id="name" type="text">
-                    <label for="name">Unicorn's name</label>
+                    <input id="name" name="name" type="text" class="validate" required>
+                    <label for="name" data-error="Not a valid name">Unicorn's name</label>
                 </div><!--End Input Field Name-->
 
                 <!--Gender-->
                 <div class="input-field" id="gender-field">
-    			     <select name="gender">
+    			     <select name="gender" class="validate" id="gender"required>
       			       <option value="0" disabled selected>Unicorn's gender</option>
       			       <option value="F">Female</option>
       			       <option value="M">Male</option>
       			       <option value="N">Doesn't believe in gender</option>
     			     </select>
+                     <p class="gender-invalid">Please, choose a gender</p>
   			   </div><!--End Input Field Gender-->
 
                 <!--Fur Color-->
   			   <div class="input-field" id="fur-field">
-                    <select id="fur-color" name="fur-color">
+                    <select id="fur-color" name="fur-color" class="validate" required>
                         <option value="0" disabled selected>Fur color</option>
-                        <option value="blu">Blue</option>
+                       <option value="blu">Blue</option>
       			       <option value="pin">Pink</option>
       			       <option value="pur">Purple</option>
       			       <option value="ora">Orange</option>
@@ -77,7 +90,7 @@
                 <!--Horn Length-->
   			   <div class="range-field">
                     <label for="horn">Horn Length</label>
-                    <input type="range" min="5" max="25" name="horn" id="horn"/>
+                    <input type="range" min="5" max="25" name="horn" id="horn" class="validate" required>
                     <div class="horn-range">
                         <p>5 cm</p>
                         <p>25 cm</p>
@@ -86,7 +99,7 @@
 
                 <!--Email-->
                 <div class="input-field">
-                    <input id="email" type="email" class="validate">
+                    <input id="mail" type="email" class="validate" name="email" required>
                     <label for="email" id="labelmail" data-error="Not a valid e-mail address">Email address</label>
                     <!--Alert Icon-->
                     <div class="red-text" id="error">
@@ -96,13 +109,13 @@
 
                 <!--Checkbox-->
                 <div class="input-checkbox">
-      			   <input type="checkbox" class="filled-in" id="terms"/>
-                    <label for="terms">I accept terms and conditions</label>
+      			   <input type="checkbox" class="filled-in validate" id="terms" name="terms" required/>
+                    <label for="terms" data-error="Please, acept terms and conditions">I accept terms and conditions</label>
                 </div><!--End Input Field Checkbox-->
 
                 <!--Button-->
                 <div class="input-field center-align">
-                    <button class="btn waves-effect waves-light z-depth-1 boton"  name="action">
+                    <button class="btn waves-effect waves-light z-depth-1 boton" type="button" name="action" id="boton">
                     Get my unicorn
                     </button>
                 </div><!--End Input Field Button-->

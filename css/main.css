@@ -1625,14 +1625,20 @@ h1 {
   color: #FFF; }
 
 /*Overwrites Form Padding*/
-.myform {
-  padding: 15px 50px; }
+#myform {
+  padding: 10px 50px; }
+
+.message {
+  display: none; }
 
 /*Changes Select Arrow Size and Color*/
 .select-wrapper span.caret {
   font-size: 0.8rem; }
 
 /* Overwrites Gender Select Bg Color */
+.gender-invalid {
+  display: none; }
+
 /* Changes Horn Field Width*/
 .range-field {
   width: 70%;
@@ -1663,7 +1669,7 @@ h1 {
 
 /*Changes Alert Icon Style*/
 #error {
-  visibility: hidden; }
+  display: none; }
   #error .material-icons {
     font-size: 1.2rem; }
 
