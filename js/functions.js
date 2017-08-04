@@ -1,22 +1,69 @@
+//Initializes empty array for validation
 var mistakes = [];
 
 $(document).ready(function() {
-	//Initializes empty array for validation
-		
 
-	 //Initialize Select Dropdown
-    $('select').material_select();
 
-    //Activates Burger Menu in Mobile Layout
+	//Begins object
+	var json = {
+  	"fur_color": [
+    {
+      "label": "Blue",
+      "value": "blu"
+    },
+    {
+      "label": "Pink",
+      "value": "pin"
+    },
+    {
+      "label": "Purple",
+      "value": "pur"
+    },
+    {
+      "label": "Orange",
+      "value": "ora"
+    },
+    {
+      "label": "Lime",
+      "value": "lim"
+    },
+    {
+      "label": "Black",
+      "value": "bla"
+    },
+    {
+      "label": "White",
+      "value": "whi"
+    }
+    ]
+    } //Ends Object
+
+
+    //Populates dinamically fur color select
+    $.each(json.fur_color, function (i) {
+    var label = json.fur_color[i].label;
+    var value = json.fur_color[i].value;
+    var option = '<option value="'+value+'">'+label+'</option>';
+    $('#fur-color').append(option);
+	});
+    //End Fur color Select
+
+
+	//Activates Burger Menu in Mobile Layout
   	$('.button-collapse').sideNav();
 
-
-  	//Getting the color options from the json file
-  	 $.getJSON("js/document.json", function (result) {
-  	 	console.log(data."fur_color");
+	//Initialize Select Dropdown
+	$('select').material_select();
 
 
-  	}); //Ends Get Json
+  		
+   
+  		
+  		
+  	 		 		
+  	 //Ends Get Json
+
+  	
 
 
 
@@ -37,7 +84,9 @@ $(document).ready(function() {
 
    		
 
-});
+});//Ends Document Ready
+
+
 //function validate content 
 function validate() {
 	var name = $('#name').val();
@@ -100,6 +149,4 @@ function rightEmail(x) {
 	}
 	return false;
 }
-
-
 
