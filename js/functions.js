@@ -63,6 +63,12 @@ $(document).ready(function() {
   //Initialize Select Dropdown
   $('select').material_select();
 
+  //Makes Selected Option Black on Select-Dropdown
+  $('.select-dropdown').on('click', function(){
+    $(this).css('color', '#000');
+  });
+
+
   //Makes Input Range Color in Chrome
   $('input[type="range"]').change(function () {
     var val = ($(this).val() - $(this).attr('min')) / ($(this).attr('max') - $(this).attr('min'));
@@ -73,6 +79,7 @@ $(document).ready(function() {
                 + ')'
       );
     }); //End Input Range
+  
   
   //Shows Alert Icon
     $('#mail').on('focusout', function(){

@@ -1636,9 +1636,6 @@ h1 {
   font-size: 0.8rem; }
 
 /* Overwrites Gender Select Bg Color */
-.gender-invalid {
-  display: none; }
-
 /* Changes Horn Field Width*/
 .range-field {
   width: 70%;
