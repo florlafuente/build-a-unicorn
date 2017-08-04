@@ -9,40 +9,43 @@
 	<title>Build-A-Unicorn!</title>
 	<!--Material Design Icons Font -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Materialize CSS -->
-    <link type="text/css" href="css/materialize.css" rel="stylesheet">
+  <!--Materialize CSS -->
+  <link type="text/css" href="css/materialize.css" rel="stylesheet">
 	<!--Own CSS-->
 	<link type="text/css" href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
-    <!--Navbar-->
+  <!--Navbar fixed-->
 	<div class="navbar-fixed">
 		<nav class="cyan z-depth-0">
 			<div class="nav-wrapper">
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul class="side-nav" id="mobile-demo">
-                    <li><a href="#.html">Build a unicorn!</a></li>
-                </ul>
+        <!--Menu Mobile -->
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="#.html">Build a unicorn!</a></li>
+        </ul><!-- End Menu Mobile-->
 				<ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li><a href="#"><i class="material-icons">menu</i></a></li>
-                    <li><a href="#">Build-A-Unicorn!</a></li>
-                </ul><!--End Ul-->
+          <li><a href="#"><i class="material-icons">menu</i></a></li>
+          <li><a href="#">Build-A-Unicorn!</a></li>
+        </ul><!--End Ul-->
 			</div><!--End Nav Wrapper-->
 		</nav><!--End Nav-->
 	</div><!--End navbar-fixed-->
 
-    <!--Container-->
+  <!--Container-->
 	<main class="container">
 
-        <!--Header-->
+    <!--Header-->
 		<header>
 		  <h1 class="center-align">It's time to build your unicorn. Let's go!</h1>
-		</header><!--End Header-->
+		</header>
+    <!--End Header-->
 
-        <!--Form-->
+    <!--Form-->
 		<div class="row">
 			<form class="col m6 s12 offset-m3 card grey lighten-5 z-depth-5" id="myform" method="post">
+                <!--Error / Success Messages-->
                 <div class="message purple-text lighten-3" id="success"> 
                     <p class="center-align">
                         <i class="material-icons">favorite</i> 
@@ -56,11 +59,14 @@
                     So sad! We can't make your unicorn. Please check your information
                     </p>
                  </div>
+                <!--End Messages-->
+
                 <!--Name-->
 		        <div class="input-field">
                     <input id="name" name="name" type="text" class="validate" required>
                     <label for="name" data-error="Not a valid name">Unicorn's name</label>
-                </div><!--End Input Field Name-->
+                </div>
+                <!--Name-->
 
                 <!--Gender-->
                 <div class="input-field" id="gender-field">
@@ -71,7 +77,8 @@
       			       <option value="N">Doesn't believe in gender</option>
     			     </select>
                      <p class="gender-invalid">Please, choose a gender</p>
-  			   </div><!--End Input Field Gender-->
+  			   </div>
+               <!--End Gender-->
 
                 <!--Fur Color-->
   			   <div class="input-field" id="fur-field">
@@ -86,17 +93,19 @@
       			       <option value="bla">Black</option>
       			       <option value="whi">White</option> -->
                     </select>
-                </div><!--End Input Field Fur Color-->
+                </div>
+                <!--End Fur Color-->
 
                 <!--Horn Length-->
   			   <div class="range-field">
                     <label for="horn">Horn Length</label>
-                    <input type="range" min="5" max="25" name="horn" id="horn" class="validate" required>
+                    <input type="range" min="5" max="25" value="15" name="horn" id="horn" class="validate" required>
                     <div class="horn-range">
                         <p>5 cm</p>
                         <p>25 cm</p>
                     </div>
-  			   </div><!--End Range field-->
+  			   </div>
+               <!--End Horn Length-->
 
                 <!--Email-->
                 <div class="input-field">
@@ -105,21 +114,25 @@
                     <!--Alert Icon-->
                     <div class="red-text" id="error">
                         <p class="right-align"><i class="material-icons">warning</i></p>
-                    </div><!--End Alert-->
-                </div><!--End Input Field Email-->
+                    </div>
+                    <!--End Alert-->
+                </div>
+                <!--End Email-->
 
                 <!--Checkbox-->
                 <div class="input-checkbox">
       			   <input type="checkbox" class="filled-in validate" id="terms" name="terms" required/>
                     <label for="terms" data-error="Please, acept terms and conditions">I accept terms and conditions</label>
-                </div><!--End Input Field Checkbox-->
+                </div>
+                <!--End Checkbox-->
 
                 <!--Button-->
                 <div class="input-field center-align">
                     <button class="btn waves-effect waves-light z-depth-1 boton" type="button" name="action" id="boton">
                     Get my unicorn
                     </button>
-                </div><!--End Input Field Button-->
+                </div>
+                <!--End  Button-->
         
 	       </form><!--End Form-->
 

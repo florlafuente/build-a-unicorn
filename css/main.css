@@ -1643,12 +1643,25 @@ h1 {
 .range-field {
   width: 70%;
   /* Overwrites Range Border*/
+  /* Overwrites Styles For Input Range Appeareance in Chrome*/
   /* Shows Range Track in Mozilla */
   /* Shows Range Track in IE */
   /*Changes Label Size */
-  /* Div Showing Max and Min Horn Length Value */ }
+  /* Div Showing Max and Min Horn Length Value */
+  /*End Range Label */ }
   .range-field input[type=range] {
     border: 0px; }
+  .range-field input[type="range"] {
+    -webkit-appearance: none;
+    border-radius: 6px;
+    height: 6px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0.5, #4fc3f7), color-stop(0.5, #C5C5C5)); }
+  .range-field input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background-color: #4fc3f7;
+    border: 2px solid #4fc3f7E;
+    height: 15px;
+    width: 15px; }
   .range-field input[type=range]::-moz-range-progress {
     background-color: #81d4fa; }
   .range-field input[type=range]::-ms-fill-lower {
@@ -1663,6 +1676,7 @@ h1 {
       font-size: 0.5rem;
       margin-top: -10px; }
 
+/*End Range Field */
 /* Overwrites Email margin */
 #email {
   margin-bottom: 0; }
@@ -1695,5 +1709,6 @@ h1 {
 
   form {
     background: #FFF; } }
+/*End Media Queries */
 
 /*# sourceMappingURL=main.css.map */

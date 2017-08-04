@@ -41,16 +41,15 @@ $(document).ready(function() {
     } //Ends Object
 
 
-    //Populates dinamically fur color select
-    $.each(json.fur_color, function (i) {
-    var label = json.fur_color[i].label;
-    var value = json.fur_color[i].value;
-    var option = '<option value="'+value+'">'+label+'</option>';
-    $('#fur-color').append(option);
-   });//End Fur color Select
+  //Populates dinamically fur color select
+  $.each(json.fur_color, function (i) {
+  var label = json.fur_color[i].label;
+  var value = json.fur_color[i].value;
+  var option = '<option value="'+value+'">'+label+'</option>';
+  $('#fur-color').append(option);
+  });//End Fur color Select
     
-
-      /* *** This gets the json information OK but dooesn't append 
+      /* *** This gets the json information OK but dooesn't append ***
         $.getJSON("js/document.json", function(result){
         var info = result.fur_color;
         for (i = 0; i < info.length; i++){
@@ -58,13 +57,23 @@ $(document).ready(function() {
           var value = info[i].value;
           var option = '<option value="'+value+'">'+label+'</option>';
           $('#fur-color').append(option);
-
-        }//End For Loop
-    });//Ends getJSON */
+          }//End For Loop
+      });//Ends getJSON */
 
   //Initialize Select Dropdown
   $('select').material_select();
 
+  //Makes Input Range Color in Chrome
+  $('input[type="range"]').change(function () {
+    var val = ($(this).val() - $(this).attr('min')) / ($(this).attr('max') - $(this).attr('min'));
+    $(this).css('background-image',
+                '-webkit-gradient(linear, left top, right top, '
+                + 'color-stop(' + val + ', #4fc3f7), '
+                + 'color-stop(' + val + ', #C5C5C5)'
+                + ')'
+      );
+    }); //End Input Range
+  
   //Shows Alert Icon
     $('#mail').on('focusout', function(){
     if ($("#mail").hasClass('invalid')) {
@@ -77,7 +86,7 @@ $(document).ready(function() {
       $('.message').css('display', 'none');
       //Calls Validate Function
       validate();
-      });
+    });
 
 });//Ends Document Ready
 
@@ -125,6 +134,7 @@ function validate() {
       }else{
         var datos = $('#myform').serialize();
         //Resets Empty Form
+        $('#myform')[0].reset();
 
        $.ajax({
                 url: "php/send_unicorn.php",
@@ -132,12 +142,9 @@ function validate() {
                 data: datos,
                 success: function (response) {
                     // you will get response from your php page (what you echo or print)   
-                  if(response){
-                      
-                      console.log("todo ok"); 
+                  if(response){ 
                       $('#success').css('display', 'block');
                       $('#fail').css('display', 'none');
-                      $('#myform')[0].reset();
                      
                     }else{  
                       $('#fail').css('display', 'block');

@@ -35,13 +35,16 @@ font-size: 2rem;
 color: #FFF;
 }
 
+
 /*Overwrites Form Padding*/
 #myform {			
 padding: 10px 50px;
 }
+
 .message {
 	display: none;
 }
+
 /*Changes Select Arrow Size and Color*/
 .select-wrapper {
 	span.caret {
@@ -71,6 +74,22 @@ width: 70%;
 	border: 0px;
 	}
 
+	/* Overwrites Styles For Input Range Appeareance in Chrome*/
+
+	input[type="range"]{
+    -webkit-appearance: none;
+    border-radius: 6px;
+    height: 6px;
+    background-image: -webkit-gradient(linear,left top,right top,color-stop(0.5, #4fc3f7),color-stop(0.5, #C5C5C5));
+	}
+
+    input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background-color: #4fc3f7;
+    border: 2px solid #4fc3f7E;
+    height: 15px;
+    width: 15px;
+    }
 
 	/* Shows Range Track in Mozilla */
 	input[type=range]::-moz-range-progress {
@@ -83,54 +102,51 @@ width: 70%;
 	}
 
 
+	/*Changes Label Size */
+	label {
+	font-size: 0.75rem;
+	}
 
-				/*Changes Label Size */
-				label {
-				font-size: 0.75rem;
-				}
+	/* Div Showing Max and Min Horn Length Value */
+	.horn-range {
+	display: flex;
+	justify-content: space-between;
+	p {
+		@extend .grey-text, .lighten-3;
+		display: inline-block;
+		font-size: 0.5rem;
+		margin-top: -10px;
+		}
+	}/*End Range Label */
+} /*End Range Field */
 
-				/* Div Showing Max and Min Horn Length Value */
-				.horn-range {
-					display: flex;
-					justify-content: space-between;
-					p {
-						@extend .grey-text, .lighten-3;
-						display: inline-block;
-						font-size: 0.5rem;
-						margin-top: -10px;
-					}
-				}
-			}
 
-			/* Overwrites Email margin */
+/* Overwrites Email margin */
+#email {
+margin-bottom: 0;
+}
 
-			#email {
-			margin-bottom: 0;
+/*Changes Alert Icon Style*/
+#error {
+	display: none;
+	.material-icons {
+	font-size: 1.2rem;
+	}	
+}
 
-			}
+/* Changes Checkbox Label Position */
+.input-checkbox label {
+padding-left:20%;
+}
 
-			/*Changes Alert Icon Style*/
-			#error {
-			display: none;
-				.material-icons {
-				font-size: 1.2rem;
-				
-				}	
-			}
-
-			/* Changes Checkbox Label Position */
-			.input-checkbox label {
-			padding-left:20%;
-			}
-
-			/* Overwrites Button Style */
-			.boton {
-			@extend .cyan, .darken-1;
-			font-size: 0.875rem;
-			padding: 5px 15px;
-			line-height: normal;
-	 		margin: 10px;
-			}
+/* Overwrites Button Style */
+.boton {
+@extend .cyan, .darken-1;
+font-size: 0.875rem;
+padding: 5px 15px;
+line-height: normal;
+margin: 10px;
+}
 
 /************* Media Queries**************/
 @media all and (max-width: 600px) { 
@@ -146,4 +162,4 @@ h1 {
 form {
 	background: #FFF;
 }
-}
+} /*End Media Queries */
